@@ -8,7 +8,7 @@ module.exports.run = async (Client, message) => {
 
     if (message.member.roles.find(role => role.name === "Dissod💫")) {
         const addrole = message.member.removeRole(message.member.roles.find(role => role.name === "Dissod💫"));
-        console.log(addrole)
+        console.log(addrole);
 
         return message.channel.send(message.member.displayName + " is no longer dissod").then(msg => {
             msg.delete(4000)

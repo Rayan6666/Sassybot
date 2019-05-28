@@ -6,6 +6,10 @@ Client.commands = new discord.Collection();
 
 Client.on('ready', async () => {
     console.log("Sassy 3.0 loaded, Instantiating command files..");
+    var channel = Client.channels.get('253612214148136981');
+    channel.sendMessage("Sassy has been restarted!").then(msg => {
+        msg.delete(10000)
+    });
 });
 
 fs.readdir("./commands/", (err, files) => {
