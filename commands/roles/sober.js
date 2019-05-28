@@ -9,7 +9,7 @@ module.exports.run = async (Client, message) => {
 
     let roles, array = [
         'Blazed', 'Tripping🌈', 'Rolling💊', 'Nodding🌠🌠', 'Stimmed🔋', 'Dissod💫', 'Delirious👥',
-        'Barred🎭', 'GABAergic', 'Drunk', 'Comedown '
+        'Barred🎭', 'GABAergic', 'Drunk', 'Comedown'
     ];
     for (roles of array) {
         if (message.member.roles.find(role => role.name === roles)) {
