@@ -1,3 +1,6 @@
+//this has never been completed.
+//the response data is not properly parsed / split
+
 const Discord = require('discord.js');
 const chalk = require('chalk');
 const mysql = require('mysql');
